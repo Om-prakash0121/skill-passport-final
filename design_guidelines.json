@@ -1,0 +1,97 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 4: Swiss & High-Contrast (Neo-Brutalist variation)",
+  "vibe": "Authoritative, Punchy, Raw, Energetic. Like a strict but highly effective mentor.",
+  "colors": {
+    "background": "#FFFFFF",
+    "surface": "#F4F4F5",
+    "primary_text": "#09090B",
+    "secondary_text": "#52525B",
+    "accent_primary": "#FF331F",
+    "accent_secondary": "#FFD600",
+    "success": "#00FF66",
+    "border": "#000000"
+  },
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "IBM Plex Sans",
+    "mono_font": "JetBrains Mono",
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter uppercase leading-none",
+      "h2": "text-4xl sm:text-5xl font-black tracking-tight uppercase leading-none",
+      "h3": "text-2xl sm:text-3xl font-bold tracking-tight",
+      "body": "text-base md:text-lg leading-relaxed",
+      "overline": "text-xs md:text-sm font-bold tracking-[0.2em] uppercase text-accent_primary"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Intentional asymmetry, heavy borders, strictly no rounded corners, stark contrast. Negative space is your weapon.",
+    "container_padding": "py-24 md:py-32 px-6 md:px-12",
+    "card_padding": "p-8 md:p-12",
+    "grid_system": "Tetris Grid. Use grid-cols-1 md:grid-cols-12. Allow elements to span multiple columns asymmetrically."
+  },
+  "surface_strategies": {
+    "cards": "border-4 border-black bg-white shadow-[8px_8px_0_0_rgba(0,0,0,1)] rounded-none transition-transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[12px_12px_0_0_rgba(0,0,0,1)]",
+    "buttons": "border-4 border-black bg-accent_primary text-white font-black text-xl uppercase rounded-none shadow-[6px_6px_0_0_rgba(0,0,0,1)] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0_0_rgba(0,0,0,1)] px-10 py-5",
+    "secondary_buttons": "border-4 border-black bg-accent_secondary text-black font-black text-xl uppercase rounded-none shadow-[6px_6px_0_0_rgba(0,0,0,1)] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0_0_rgba(0,0,0,1)] px-10 py-5",
+    "inputs": "border-4 border-black bg-white rounded-none p-4 text-lg focus:ring-0 focus:outline-none focus:border-accent_primary focus:shadow-[6px_6px_0_0_#FF331F]"
+  },
+  "sections_strategy": {
+    "hero": {
+      "layout": "Grid split: Left side massive text, right side abstract code image or a massive HTML-based brutalist 'FAIL/PASS' stamp graphic.",
+      "headline": "STOP APPLYING BLINDLY. KNOW IF YOU'RE JOB-READY.",
+      "subtext": "Project banaya, par confidence nahi? Get your frontend code reviewed by brutal experts and get a real job-readiness score in 48 hours."
+    },
+    "pain_points": {
+      "layout": "Bento box of 3 stark black cards with white text.",
+      "content": "Focus on rejection, ghosting, and tutorial hell."
+    },
+    "solution": {
+      "layout": "Massive scrolling marquee text in background 'SKILL PROOF PASSPORT', foreground showing 4 harsh steps in a tight grid."
+    },
+    "sample_report": {
+      "layout": "HTML-built UI component resembling a printed receipt or grading rubric. High use of JetBrains Mono.",
+      "visual": "A massive, purely CSS-built stamp graphic scoring '68/100' or 'NEEDS WORK'."
+    },
+    "pricing": {
+      "layout": "3 columns. Middle column (₹299) has yellow background (accent_secondary), pushed slightly up. Heavy black borders everywhere."
+    },
+    "form_embed": {
+      "layout": "Embedded iframe wrapped in a window-like container (macOS retro window style) with heavy borders."
+    },
+    "success_page": {
+      "layout": "Minimalist centered block. Massive green button 'GET RESULT ON WHATSAPP'. WhatsApp Number: 8260345793."
+    }
+  },
+  "images": [
+    {
+      "category": "hero_background",
+      "url": "https://images.unsplash.com/photo-1742072594013-c87f855e29ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwxfHxjb2RlJTIwcmV2aWV3JTIwc2NyZWVuJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzc4NTY0NTcxfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract computer code screen to use as texture or right-side hero visual."
+    },
+    {
+      "category": "target_audience",
+      "url": "https://images.unsplash.com/photo-1637589308599-3478cc55510d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBjb2xsZWdlJTIwc3R1ZGVudCUyMGNvZGluZyUyMGxhcHRvcCUyMGZvY3VzfGVufDB8fHx8MTc3ODU2NDU3MXww&ixlib=rb-4.1.0&q=85",
+      "description": "Indian student coding on laptop, suitable for pain points or about section."
+    }
+  ],
+  "motion_and_interaction": {
+    "hover_states": "Brutalist offset shadows expand on hover. Translate elements up and left.",
+    "scroll_animations": "Harsh snap reveals. No soft fading. Elements pop in instantly.",
+    "marquee": "Slow, constant movement for 'SKILL PROOF PASSPORT' separator using purely CSS or react-fast-marquee."
+  },
+  "components_mapping": {
+    "buttons": "Custom HTML/Tailwind for brutalist shadow.",
+    "cards": "Custom HTML/Tailwind divs with strict borders.",
+    "icons": "Lucide React, rendered with stroke-width 3 for harshness."
+  },
+  "instructions_to_main_agent": [
+    "Use Outfit for headings, IBM Plex Sans for body text, and JetBrains Mono for the report card data. Import via Google Fonts.",
+    "Do not use Shadcn default cards. Implement the neo-brutalist shadow classes provided in surface_strategies.",
+    "Ensure the sample report card is built using HTML/CSS (use JetBrains Mono font) to look like a harsh technical grading sheet. Do not use an image for the report card.",
+    "Integrate the WhatsApp link (https://wa.me/918260345793) on the success page with a massive neon green button.",
+    "Embed the Google form inside a bordered container that looks like a retro terminal window.",
+    "Never use soft shadows, gradients, or rounded corners > sm.",
+    "Add 'data-testid' to all buttons, links, and forms for automation testing."
+  ]
+}
