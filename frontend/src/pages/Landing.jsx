@@ -46,7 +46,7 @@ export default function Landing() {
               <span className="font-bold text-black">
                 Project banaya, par confidence nahi?
               </span>{" "}
-              Get your React / JS project, GitHub & resume reviewed by real
+              Get your project, GitHub & resume reviewed by real
               experts — receive a brutal{" "}
               <span className="underline decoration-[#FF331F] decoration-4 underline-offset-4">
                 job-readiness score
@@ -387,7 +387,7 @@ export default function Landing() {
                       CANDIDATE_REPORT
                     </div>
                     <div className="font-display text-2xl md:text-3xl mt-1">
-                      Frontend / React
+                      Project Audit Report
                     </div>
                   </div>
                   <div className="border-4 border-[#FF331F] text-[#FF331F] px-3 py-2 text-right">
@@ -469,9 +469,9 @@ export default function Landing() {
                     Recommended_Next_Step
                   </div>
                   <p className="mt-1 text-[13px] leading-relaxed">
-                    {">"} Learn React hooks deeply, restructure into
-                    /components, /hooks, /lib. Add Zustand or Context for
-                    global state. Target score: 85+.
+                    {">"} Improve state handling, restructure your folders,
+                    write reusable components, and tighten your Git history.
+                    Target score: 85+.
                   </p>
                 </div>
               </div>
