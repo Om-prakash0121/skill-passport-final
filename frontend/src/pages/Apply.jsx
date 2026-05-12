@@ -136,6 +136,8 @@ export default function Apply() {
                   frameBorder="0"
                   marginHeight="0"
                   marginWidth="0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                   data-testid="apply-google-form-iframe"
                 >
                   Loading…
