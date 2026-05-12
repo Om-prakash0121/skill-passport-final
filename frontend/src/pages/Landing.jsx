@@ -487,126 +487,74 @@ export default function Landing() {
       >
         <div className="max-w-7xl mx-auto px-5 md:px-10">
           <div className="text-center max-w-2xl mx-auto">
-            <Pill color="bg-[#FF331F] text-white">Pricing</Pill>
+            <Pill color="bg-[#00FF66]">100% Free · Limited Time</Pill>
             <h2 className="font-display uppercase text-4xl sm:text-5xl md:text-6xl mt-5 leading-none">
-              Start with your first review.
+              Free for everyone.<br />Right now.
             </h2>
             <p className="mt-4 text-zinc-600">
-              Pay only after you submit. We confirm what works for you.
+              We’re reviewing every project for free while we onboard our first
+              students. No card, no catch — just submit and we’ll get to work.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14 items-stretch">
-            {/* Free */}
+          <div className="mt-14 max-w-xl mx-auto">
+            {/* Free — only plan */}
             <div
-              className="brut-card p-7 flex flex-col"
+              className="brut-card bg-[#FFD600] p-8 md:p-10 flex flex-col relative"
               data-testid="pricing-free"
             >
-              <div className="font-mono text-xs uppercase tracking-widest text-zinc-500">
-                Free
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-white border-4 border-black px-3 py-1 font-mono text-[11px] uppercase tracking-widest">
+                Early Access
               </div>
-              <div className="font-display text-5xl mt-2">₹0</div>
-              <div className="text-zinc-600 mt-1">Just to test the waters</div>
+              <div className="flex items-baseline justify-between">
+                <div>
+                  <div className="font-mono text-xs uppercase tracking-widest">
+                    Founding Batch
+                  </div>
+                  <div className="font-display text-6xl md:text-7xl mt-1 leading-none">
+                    ₹0
+                  </div>
+                </div>
+                <div className="text-right font-mono text-xs">
+                  <div className="line-through text-zinc-700">₹999</div>
+                  <div className="bg-black text-[#FFD600] px-2 py-1 mt-1">
+                    FREE TODAY
+                  </div>
+                </div>
+              </div>
+              <p className="mt-3 text-zinc-800">
+                Everything you need to know if you’re job-ready.
+              </p>
+
               <ul className="mt-6 space-y-3 flex-1">
                 {[
-                  "Submit profile + project",
-                  "Basic feedback (delayed)",
-                  "1 line strength + 1 weakness",
+                  "Full project audit (code + UI)",
+                  "GitHub review with action items",
+                  "Resume feedback with concrete fixes",
+                  "Job-readiness score (0–100)",
+                  "Detailed feedback report in 48 hours",
                 ].map((f) => (
-                  <li key={f} className="flex gap-2">
+                  <li key={f} className="flex gap-2 text-base md:text-lg">
                     <Check
-                      size={18}
+                      size={20}
                       strokeWidth={3}
-                      className="text-[#FF331F] mt-0.5 flex-shrink-0"
+                      className="text-black mt-1 flex-shrink-0"
                     />
                     {f}
                   </li>
                 ))}
               </ul>
+
               <Link
                 to="/apply"
-                className="btn-brut btn-brut-white mt-7 w-full"
+                className="btn-brut mt-8 w-full justify-center"
                 data-testid="pricing-free-cta"
               >
-                Submit Free
+                Claim Free Review →
               </Link>
-            </div>
-
-            {/* ₹299 — highlighted */}
-            <div
-              className="brut-card bg-[#FFD600] p-7 flex flex-col md:-translate-y-6 relative"
-              data-testid="pricing-299"
-            >
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-white border-4 border-black px-3 py-1 font-mono text-[11px] uppercase tracking-widest">
-                Most Popular
+              <div className="mt-3 text-center font-mono text-xs">
+                No credit card. No spam. Just real feedback.
               </div>
-              <div className="font-mono text-xs uppercase tracking-widest">
-                Standard
-              </div>
-              <div className="font-display text-5xl mt-2">₹299</div>
-              <div className="mt-1">Resume + project feedback</div>
-              <ul className="mt-6 space-y-3 flex-1">
-                {[
-                  "Full project audit",
-                  "Resume review with fixes",
-                  "Detailed feedback PDF",
-                  "48-hour turnaround",
-                ].map((f) => (
-                  <li key={f} className="flex gap-2">
-                    <Check
-                      size={18}
-                      strokeWidth={3}
-                      className="text-black mt-0.5 flex-shrink-0"
-                    />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                to="/apply"
-                className="btn-brut mt-7 w-full"
-                data-testid="pricing-299-cta"
-              >
-                Get Standard Review
-              </Link>
-            </div>
-
-            {/* ₹999 */}
-            <div
-              className="brut-card bg-black text-white p-7 flex flex-col"
-              data-testid="pricing-999"
-            >
-              <div className="font-mono text-xs uppercase tracking-widest text-[#FFD600]">
-                Pro
-              </div>
-              <div className="font-display text-5xl mt-2">₹999</div>
-              <div className="text-zinc-300 mt-1">
-                Full review + job-readiness score
-              </div>
-              <ul className="mt-6 space-y-3 flex-1">
-                {[
-                  "Everything in Standard",
-                  "Job-readiness score (0–100)",
-                  "60-min 1:1 call",
-                  "Personal improvement roadmap",
-                ].map((f) => (
-                  <li key={f} className="flex gap-2">
-                    <Check
-                      size={18}
-                      strokeWidth={3}
-                      className="text-[#00FF66] mt-0.5 flex-shrink-0"
-                    />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                to="/apply"
-                className="btn-brut btn-brut-yellow mt-7 w-full"
-                data-testid="pricing-999-cta"
-              >
-                Go Pro
-              </Link>
             </div>
           </div>
         </div>
